@@ -1,0 +1,18 @@
+{
+    "name": "ts-utils-julseb",
+    "version": "1.0.2",
+    "private": false,
+    "description": "Small utils components in TypeScript",
+    "main": "index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "babel src -d lib"
+    },
+    "author": "Julien Sebag",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.17.6",
+        "@babel/core": "^7.17.5",
+        "typescript": "^4.6.3"
+    }
+}
