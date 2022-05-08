@@ -1,35 +1,37 @@
-// All components
-import calculateTotalSum from "./src/calculateTotalSum"
-import capitalize from "./src/capitalize"
-import convertDate from "./src/convertDate"
-import convertDateShort from "./src/convertDateShort"
-import convertPrice from "./src/convertPrice"
-import convertToEmail from "./src/convertToEmail"
-import convertYoutube from "./src/convertYoutube"
-import getFirstName from "./src/getFirstName"
-import getLastName from "./src/getLastName"
-import getRandom from "./src/getRandom"
-import getRandomAvatar from "./src/getRandomAvatar"
-import getRandomCity from "./src/getRandomCity"
-import getRandomDate from "./src/getRandomDate"
-import getRandomLocation from "./src/getRandomLocation"
-import getRandomNumber from "./src/getRandomNumber"
-import getRandomString from "./src/getRandomString"
-import getRandomTime from "./src/getRandomTime"
-import getTimeNow from "./src/getTimeNow"
-import getToday from "./src/getToday"
-import { emailRegex, passwordRegex } from "./src/regex"
-import scrollToTop from "./src/scrollToTop"
-import slugify from "./src/slugify"
-import unslugify from "./src/unslugify"
+// const all components
+const allCities = require("./lib/allCities.json")
+const calculateTotalSum = require("./lib/calculateTotalSum")
+const capitalize = require("./lib/capitalize")
+const convertDate = require("./lib/convertDate")
+const convertDateShort = require("./lib/convertDateShort")
+const convertToEmail = require("./lib/convertToEmail")
+const convertYoutube = require("./lib/convertYoutube")
+const getFirstName = require("./lib/getFirstName")
+const getLastName = require("./lib/getLastName")
+const getRandom = require("./lib/getRandom")
+const getRandomAvatar = require("./lib/getRandomAvatar")
+const getRandomCity = require("./lib/getRandomCity")
+const getRandomDate = require("./lib/getRandomDate")
+const getRandomLocation = require("./lib/getRandomLocation")
+const getRandomNumber = require("./lib/getRandomNumber")
+const getRandomString = require("./lib/getRandomString")
+const getRandomTime = require("./lib/getRandomTime")
+const getTimeNow = require("./lib/getTimeNow")
+const getToday = require("./lib/getToday")
+const { passwordRegex, emailRegex } = require("./lib/regex")
+const scrollToTop = require("./lib/scrollToTop")
+const slugify = require("./lib/slugify")
+const stringifyPx = require("./lib/stringifyPx")
+const unslugify = require("./lib/unslugify")
+const convertPrice = require("./lib/convertPrice")
 
-// Export all components
-export {
+// Exports all components
+module.exports = {
+    allCities,
     calculateTotalSum,
     capitalize,
     convertDate,
     convertDateShort,
-    convertPrice,
     convertToEmail,
     convertYoutube,
     getFirstName,
@@ -44,9 +46,11 @@ export {
     getRandomTime,
     getTimeNow,
     getToday,
-    emailRegex,
     passwordRegex,
+    emailRegex,
     scrollToTop,
     slugify,
+    stringifyPx,
     unslugify,
+    convertPrice,
 }

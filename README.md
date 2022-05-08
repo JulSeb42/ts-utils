@@ -1,6 +1,6 @@
-# JS utils
+# TS utils
 
-Small JavaScript functions
+Small TypeScript functions
 
 ## allCities
 
@@ -202,4 +202,12 @@ Replaces dashes and underscores to a space, and capitalize the first letter of a
 
 ```
 unslugify("hello-world-how-are-you") # Hello world how are you
+```
+
+## stringifyPx
+
+Small function to transform a number into a string with px. Use it with [styled-components](https://styled-components.com/)!
+
+```
+stringifyPx(48) # 48px
 ```

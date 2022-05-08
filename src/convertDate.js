@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var convertDate = function (date) {
+const convertDate = (date) => {
     if (date) {
-        var newDate = date.split("-");
-        var day = newDate[2];
-        var month = newDate[1];
-        var year = newDate[0];
-        var convertedMonth = month === "01"
+        const newDate = date.split("-");
+        const day = newDate[2];
+        let month = newDate[1];
+        const year = newDate[0];
+        let convertedMonth = month === "01"
             ? "January"
             : month === "02"
                 ? "February"
@@ -31,7 +31,7 @@ var convertDate = function (date) {
                                                     : month === "12"
                                                         ? "December"
                                                         : "Error in date";
-        return "".concat(day, " ").concat(convertedMonth, " ").concat(year);
+        return `${day} ${convertedMonth} ${year}`;
     }
     else {
         return "12 December 2021";

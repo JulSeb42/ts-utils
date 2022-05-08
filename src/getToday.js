@@ -1,16 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var getToday = function () {
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1;
-    var yy = today.getFullYear();
+const getToday = () => {
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth() + 1;
+    let yy = today.getFullYear();
     if (dd < 10) {
         dd = "0" + dd;
     }
     if (mm < 10) {
         mm = "0" + mm;
     }
-    return "".concat(yy, "-").concat(mm, "-").concat(dd);
+    return `${yy}-${mm}-${dd}`;
 };
 exports.default = getToday;
