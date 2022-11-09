@@ -1,0 +1,25 @@
+{
+    "name": "ts-utils-julseb",
+    "version": "2.2.5",
+    "private": false,
+    "description": "Small utils components in TypeScript",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clean": "rm -rf ./lib && mkdir lib",
+        "move-to-lib": "mv ./src/*.js ./lib",
+        "build-all": "npm run clean && tsc",
+        "build": "babel src -d lib"
+    },
+    "author": "Julien Sebag",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/cli": "^7.17.6",
+        "@babel/core": "^7.17.5",
+        "@types/node": "^17.0.31",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "@babel/plugin-syntax-import-assertions": "^7.17.12"
+    }
+}
