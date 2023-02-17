@@ -1,5 +1,6 @@
 export * from "./src/calculateAverage"
 export * from "./src/calculateTotalSum"
+export * from "./src/camel-to-capitalize"
 export * from "./src/capitalize"
 export * from "./src/convertDate"
 export * from "./src/convertDateShort"
