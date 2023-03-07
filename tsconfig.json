@@ -5,11 +5,12 @@
     "compilerOptions": {
         "strict": true,
         // "declaration": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "downlevelIteration": true,
     },
     "target": "es5",
     "lib": [
-        "es6",
+        "es5",
         "DOM"
-    ],
+    ]
 }
