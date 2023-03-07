@@ -75,6 +75,14 @@ Converts an amount to a formatted price
 convertPrice(1000, "EUR") # 1 000,00 €
 ```
 
+## deleteDuplicates
+
+Delete all duplicates inside an array (also works with an array of objects)
+
+```
+deleteDuplicates([1, 1, 2, 3, 4, 5]).join(", ") # 1, 2, 3, 4, 5
+```
+
 ## detectLanguage
 
 Search for `lang` or `language` in localStorage, and if it returns `null` both times detects the browser language
@@ -160,7 +168,15 @@ getTimeNow() # 14:42
 Returns today's date
 
 ```
-2022-03-07
+2023-03-07
+```
+
+## getTomorrow
+
+Returns tomorrow's date
+
+```
+2023-03-08
 ```
 
 ## passwordRegex
