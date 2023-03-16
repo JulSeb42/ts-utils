@@ -1,7 +1,8 @@
-export const getTimeNow = () => {
+export const getTimeNow = (withSeconds?: boolean) => {
     const today = new Date()
     let hours: number | string = today.getHours()
     let minutes: number | string = today.getMinutes()
+    let seconds: number | string = today.getSeconds()
 
     if (hours < 10) {
         hours = `0${hours}`
@@ -11,5 +12,9 @@ export const getTimeNow = () => {
         minutes = `0${minutes}`
     }
 
-    return `${hours}:${minutes}`
+    if (seconds < 10) {
+        seconds = `0${seconds}`
+    }
+
+    return `${hours}:${minutes}${withSeconds ? `:${seconds}` : ""}`
 }
