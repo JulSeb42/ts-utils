@@ -1,4 +1,8 @@
-export const convertDate = (date: Date) => {
+/*=============================================== Convert date to `12 August 2023` ===============================================*/
+
+export function convertDate(date: Date | string): string {
+    date = typeof date === "string" ? new Date(date) : date
+
     const formatDate = (year: number, month: number, day: number) =>
         `${year}-${month < 10 ? 0 : ""}${month}-${day}`
 

@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Get tomorrow's date in format `yyyy-mm-dd` ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.getTomorrow = void 0;
-var getTomorrow = function () {
+function getTomorrow() {
     var tomorrow = new Date(Date.now() + 3600 * 1000 * 24);
     var dd = tomorrow.getDate();
     var mm = tomorrow.getMonth();
@@ -13,5 +14,5 @@ var getTomorrow = function () {
         mm = "0" + mm;
     }
     return "".concat(yy, "-").concat(mm, "-").concat(dd);
-};
+}
 exports.getTomorrow = getTomorrow;

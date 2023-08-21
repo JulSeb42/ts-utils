@@ -1,4 +1,6 @@
-export const getRandomDate = (minYear?: number, maxYear?: number) => {
+/*=============================================== Get a random date from given values ===============================================*/
+
+export function getRandomDate(minYear?: number, maxYear?: number): string {
     const thisYear = new Date().getFullYear()
     const getMinYear = minYear || thisYear
     const getMaxYear = maxYear || thisYear

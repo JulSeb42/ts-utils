@@ -1,4 +1,6 @@
-export const detectLanguage = () => {
+/*=============================================== Detect lang value in local storage ===============================================*/
+
+export function detectLanguage() {
     if (typeof window !== "undefined") {
         if (localStorage.getItem("language") !== null) {
             return localStorage.getItem("language")

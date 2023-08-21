@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Sort array of strings by frequency of values ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.sortByFrequency = void 0;
-var sortByFrequency = function (array) {
+function sortByFrequency(array) {
     var frequency = {};
     var value;
     for (var i = 0; i < array.length; i++) {
@@ -24,5 +25,5 @@ var sortByFrequency = function (array) {
         return frequency[b] - frequency[a];
     };
     return uniques.sort(compareFrequency);
-};
+}
 exports.sortByFrequency = sortByFrequency;

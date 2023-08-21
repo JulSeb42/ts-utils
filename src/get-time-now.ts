@@ -1,4 +1,6 @@
-export const getTimeNow = (withSeconds?: boolean) => {
+/*=============================================== Get time now in format `hour:minutes:seconds` ===============================================*/
+
+export function getTimeNow(withSeconds?: boolean): string {
     const today = new Date()
     let hours: number | string = today.getHours()
     let minutes: number | string = today.getMinutes()

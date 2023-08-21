@@ -1,7 +1,9 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Convert date to `12 Aug 2023` ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.convertDateShort = void 0;
-var convertDateShort = function (date) {
+function convertDateShort(date) {
+    date = typeof date === "string" ? new Date(date) : date;
     var formatDate = function (year, month, day) {
         return "".concat(year, "-").concat(month < 10 ? 0 : "").concat(month, "-").concat(day);
     };
@@ -36,5 +38,5 @@ var convertDateShort = function (date) {
                                                     ? "Dec"
                                                     : "Error in date";
     return "".concat(day, " ").concat(convertedMonth, " ").concat(year);
-};
+}
 exports.convertDateShort = convertDateShort;

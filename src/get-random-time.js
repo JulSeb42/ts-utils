@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Get a random time ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRandomTime = void 0;
-var getRandomTime = function (min, max, withSeconds) {
+function getRandomTime(min, max, withSeconds) {
     if (min === void 0) { min = 0; }
     if (max === void 0) { max = 23; }
     var getMin = min;
@@ -19,5 +20,5 @@ var getRandomTime = function (min, max, withSeconds) {
         seconds = "0".concat(seconds);
     }
     return "".concat(hour, ":").concat(minutes).concat(withSeconds ? ":".concat(seconds) : "");
-};
+}
 exports.getRandomTime = getRandomTime;

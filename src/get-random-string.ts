@@ -1,4 +1,6 @@
-export const getRandomString = (length = 20) => {
+/*=============================================== Get a random string ===============================================*/
+
+export function getRandomString(length = 20): string {
     const randomChars =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     let result = ""

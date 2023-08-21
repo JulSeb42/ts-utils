@@ -1,4 +1,6 @@
-export const stringifyPx = (number: number | string | undefined) => {
+/*=============================================== Transform a value to `(value)px` ===============================================*/
+
+export function stringifyPx(number: number | string): string {
     if (typeof number === "string") {
         return number
     } else {

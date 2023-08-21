@@ -1,4 +1,6 @@
-export const getToday = () => {
+/*=============================================== Get today's date in format `yyyy-mm-dd` ===============================================*/
+
+export function getToday(): string {
     let today = new Date()
     let dd: number | string = today.getDate()
     let mm: number | string = today.getMonth() + 1

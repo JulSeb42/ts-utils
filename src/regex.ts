@@ -1,5 +1,7 @@
-const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/
+/*=============================================== Regex tests ===============================================*/
 
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
+const passwordRegex: RegExp = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/
+
+const emailRegex: RegExp = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
 export { passwordRegex, emailRegex }

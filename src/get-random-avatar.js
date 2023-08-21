@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Get random avatar from cartoon-avatar library ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRandomAvatar = void 0;
-var getRandomAvatar = function (gender) {
+function getRandomAvatar(gender) {
     var random = Math.floor(Math.random() * (114 - 1 + 1) + 1);
     var randomMf = Math.floor(Math.random() + 0.5);
     var mf = ["male", "female"];
@@ -11,5 +12,5 @@ var getRandomAvatar = function (gender) {
             ? "female"
             : mf[randomMf];
     return "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/".concat(genderPicture, "/").concat(random, ".png");
-};
+}
 exports.getRandomAvatar = getRandomAvatar;

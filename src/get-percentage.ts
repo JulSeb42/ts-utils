@@ -1,2 +1,5 @@
-export const getPercentage = (partial: number, total: number) =>
-    (100 * partial) / total
+/*=============================================== Get percentage of given value ===============================================*/
+
+export function getPercentage(partial: number, total: number): number {
+    return (100 * partial) / total
+}

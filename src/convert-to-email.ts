@@ -1,7 +1,7 @@
+/*=============================================== Convert string to email ===============================================*/
+
 import { slugify } from "./slugify"
 
-export const convertToEmail = (name: string, domain?: string) => {
-    return `${slugify(name).replace(/-/g, ".").replace(/ /g, ".")}@${
-        domain || "email.com"
-    }`
+export function convertToEmail(name: string, domain = "email.com"): string {
+    return `${slugify(name).replace(/-/g, ".").replace(/ /g, ".")}@${domain}`
 }

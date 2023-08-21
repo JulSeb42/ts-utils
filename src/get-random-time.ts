@@ -1,4 +1,10 @@
-export const getRandomTime = (min = 0, max = 23, withSeconds?: boolean) => {
+/*=============================================== Get a random time ===============================================*/
+
+export function getRandomTime(
+    min = 0,
+    max = 23,
+    withSeconds?: boolean
+): string {
     const getMin = min
     const getMax = max
     let hour: number | string =

@@ -1,4 +1,6 @@
-export const sortByFrequency = (array: string[]) => {
+/*=============================================== Sort array of strings by frequency of values ===============================================*/
+
+export function sortByFrequency(array: string[]): string[] {
     let frequency: any = {}
     let value: string
 

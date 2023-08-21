@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Detect lang value in local storage ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.detectLanguage = void 0;
-var detectLanguage = function () {
+function detectLanguage() {
     if (typeof window !== "undefined") {
         if (localStorage.getItem("language") !== null) {
             return localStorage.getItem("language");
@@ -13,5 +14,5 @@ var detectLanguage = function () {
             return navigator.language;
         }
     }
-};
+}
 exports.detectLanguage = detectLanguage;

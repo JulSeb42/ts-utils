@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Get time now in format `hour:minutes:seconds` ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.getTimeNow = void 0;
-var getTimeNow = function (withSeconds) {
+function getTimeNow(withSeconds) {
     var today = new Date();
     var hours = today.getHours();
     var minutes = today.getMinutes();
@@ -16,5 +17,5 @@ var getTimeNow = function (withSeconds) {
         seconds = "0".concat(seconds);
     }
     return "".concat(hours, ":").concat(minutes).concat(withSeconds ? ":".concat(seconds) : "");
-};
+}
 exports.getTimeNow = getTimeNow;

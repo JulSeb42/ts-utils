@@ -1,8 +1,9 @@
-export const slugify = (str: string) => {
-    str = str.replace(/^\s+|\s+$/g, "") // trim
+/*=============================================== Slugify string ===============================================*/
+
+export function slugify(str: string): string {
+    str = str.replace(/^\s+|\s+$/g, "")
     str = str.toLowerCase()
 
-    // remove accents, swap ñ for n, etc
     let from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;"
     let to = "aaaaeeeeiiiioooouuuunc------"
     for (let i = 0, l = from.length; i < l; i++) {

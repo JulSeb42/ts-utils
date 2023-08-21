@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Calculate total sum from array ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateTotalSum = void 0;
-var calculateTotalSum = function (arr) {
+function calculateTotalSum(arr) {
     return arr.map(function (item) { return item; }).reduce(function (partialSum, a) { return partialSum + a; }, 0);
-};
+}
 exports.calculateTotalSum = calculateTotalSum;

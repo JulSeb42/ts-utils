@@ -1,4 +1,6 @@
-export const getTomorrow = () => {
+/*=============================================== Get tomorrow's date in format `yyyy-mm-dd` ===============================================*/
+
+export function getTomorrow(): string {
     const tomorrow = new Date(Date.now() + 3600 * 1000 * 24)
     let dd: string | number = tomorrow.getDate()
     let mm: string | number = tomorrow.getMonth()

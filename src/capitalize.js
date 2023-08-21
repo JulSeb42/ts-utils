@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Capitalize string ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.capitalize = void 0;
-var capitalize = function (str) {
+function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
-};
+}
 exports.capitalize = capitalize;

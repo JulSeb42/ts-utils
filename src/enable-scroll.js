@@ -1,5 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Enable page scroll ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.enableScroll = void 0;
-var enableScroll = function () { return document.body.classList.remove("stop-scrolling"); };
+function enableScroll() {
+    return document.body.classList.remove("stop-scrolling");
+}
 exports.enableScroll = enableScroll;

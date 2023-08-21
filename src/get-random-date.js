@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Get a random date from given values ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRandomDate = void 0;
-var getRandomDate = function (minYear, maxYear) {
+function getRandomDate(minYear, maxYear) {
     var thisYear = new Date().getFullYear();
     var getMinYear = minYear || thisYear;
     var getMaxYear = maxYear || thisYear;
@@ -18,5 +19,5 @@ var getRandomDate = function (minYear, maxYear) {
         day = Math.floor(Math.random() * (28 - 1)) + 1;
     }
     return "".concat(year, "-").concat(month, "-").concat(day);
-};
+}
 exports.getRandomDate = getRandomDate;

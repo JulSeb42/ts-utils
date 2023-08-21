@@ -1,5 +1,7 @@
-import { capitalize } from "./capitalize"
+/*=============================================== Unslugify string ===============================================*/
 
-export const unslugify = (str: string) => {
-    return capitalize(str.replace(/-/g, " ").replace(/_/g, " "))
+import { toSentenceCase } from "./to-sentence-case"
+
+export function unslugify(str: string): string | undefined {
+    return toSentenceCase(str.replace(/-/g, " ").replace(/_/g, " "))
 }

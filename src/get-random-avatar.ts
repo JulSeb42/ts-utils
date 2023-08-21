@@ -1,4 +1,6 @@
-export const getRandomAvatar = (gender?: "male" | "female" | "other") => {
+/*=============================================== Get random avatar from cartoon-avatar library ===============================================*/
+
+export function getRandomAvatar(gender?: "male" | "female" | "other"): string {
     const random = Math.floor(Math.random() * (114 - 1 + 1) + 1)
     const randomMf = Math.floor(Math.random() + 0.5)
     const mf = ["male", "female"]

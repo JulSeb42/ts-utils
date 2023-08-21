@@ -1,7 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Get percentage of given value ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.getPercentage = void 0;
-var getPercentage = function (partial, total) {
+function getPercentage(partial, total) {
     return (100 * partial) / total;
-};
+}
 exports.getPercentage = getPercentage;

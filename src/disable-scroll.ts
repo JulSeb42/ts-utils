@@ -1,1 +1,5 @@
-export const disableScroll = () => document.body.classList.add("stop-scrolling")
+/*=============================================== Disable page scroll ===============================================*/
+
+export function disableScroll(): void {
+    return document.body.classList.add("stop-scrolling")
+}

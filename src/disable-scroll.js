@@ -1,5 +1,8 @@
 "use strict";
-exports.__esModule = true;
+/*=============================================== Disable page scroll ===============================================*/
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.disableScroll = void 0;
-var disableScroll = function () { return document.body.classList.add("stop-scrolling"); };
+function disableScroll() {
+    return document.body.classList.add("stop-scrolling");
+}
 exports.disableScroll = disableScroll;
