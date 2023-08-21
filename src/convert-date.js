@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Convert date to `12 August 2023` ===============================================*/
+/*=============================================== Convert date ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.convertDate = void 0;
+/**
+ * @description Convert a date string to full date
+ * @example convertDateShort("2023-08-12") => 12 August 2023
+ */
 function convertDate(date) {
     date = typeof date === "string" ? new Date(date) : date;
     var formatDate = function (year, month, day) {

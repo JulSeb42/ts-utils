@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Get a random time ===============================================*/
+/*=============================================== Get random time ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRandomTime = void 0;
+/**
+ * @description Get a random time
+ * @example getRandomTime() => 03:04
+ */
 function getRandomTime(min, max, withSeconds) {
     if (min === void 0) { min = 0; }
     if (max === void 0) { max = 23; }

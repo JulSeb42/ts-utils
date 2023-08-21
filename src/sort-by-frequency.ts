@@ -1,4 +1,9 @@
-/*=============================================== Sort array of strings by frequency of values ===============================================*/
+/*=============================================== Sort by frequency ===============================================*/
+
+/**
+ * @description Sort array of strings by frequency of values
+ * @example sortByFrequency(["Hello", "Foo", "baz", "hello", "heLlo", "foo"]) => hello, foo, baz
+ */
 
 export function sortByFrequency(array: string[]): string[] {
     let frequency: any = {}

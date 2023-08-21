@@ -1,4 +1,9 @@
-/*=============================================== Get today's date in format `yyyy-mm-dd` ===============================================*/
+/*=============================================== Get today ===============================================*/
+
+/**
+ * @description Get today's date in format `yyyy-mm-dd`
+ * @example getToday() => 2023-08-21
+ */
 
 export function getToday(): string {
     let today = new Date()

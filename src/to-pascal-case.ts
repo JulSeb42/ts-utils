@@ -1,4 +1,9 @@
-/*=============================================== Convert string ToPascalCase ===============================================*/
+/*=============================================== To pascal case ===============================================*/
+
+/**
+ * @description Transforms a string to pascal case
+ * @example toPascalCase("hello world") => HelloWorld
+ */
 
 export function toPascalCase(string: string): string | undefined {
     return string

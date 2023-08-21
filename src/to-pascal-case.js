@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Convert string ToPascalCase ===============================================*/
+/*=============================================== To pascal case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toPascalCase = void 0;
+/**
+ * @description Transforms a string to pascal case
+ * @example toPascalCase("hello world") => HelloWorld
+ */
 function toPascalCase(string) {
     return string
         .toLowerCase()

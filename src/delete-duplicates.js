@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Delete duplicates values from array ===============================================*/
+/*=============================================== Delete duplicates ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteDuplicates = void 0;
+/**
+ * @description Delete duplicated values from array
+ * @example deleteDuplicates([1, 1, 1, 2, 3]) => [1, 2, 3]
+ */
 function deleteDuplicates(arr) {
     return arr.filter(function (v, i, a) {
         // @ts-ignore

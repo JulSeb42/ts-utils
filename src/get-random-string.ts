@@ -1,4 +1,9 @@
-/*=============================================== Get a random string ===============================================*/
+/*=============================================== Get random string ===============================================*/
+
+/**
+ * @description Get a random string
+ * @example getRandomString() => MHFTIzosZmtqHokDtJJA
+ */
 
 export function getRandomString(length = 20): string {
     const randomChars =

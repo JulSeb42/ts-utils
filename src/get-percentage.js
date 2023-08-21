@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Get percentage of given value ===============================================*/
+/*=============================================== Get percentage ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getPercentage = void 0;
+/**
+ * @description Get percentage of given value
+ * @example getPercentage(200, 500) => 40
+ */
 function getPercentage(partial, total) {
     return (100 * partial) / total;
 }

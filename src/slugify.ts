@@ -1,4 +1,9 @@
-/*=============================================== Slugify string ===============================================*/
+/*=============================================== Slugify ===============================================*/
+
+/**
+ * @description Slugify string
+ * @example slugify("Hello World") => hello-world
+ */
 
 export function slugify(str: string): string {
     str = str.replace(/^\s+|\s+$/g, "")

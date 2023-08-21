@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Convert string to-kebab-case ===============================================*/
+/*=============================================== To kebab case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toKebabCase = void 0;
+/**
+ * @description Transforms a string to kebab case
+ * @example toKebabCase("hello world") => hello-world
+ */
 function toKebabCase(string) {
     var _a;
     return (_a = string

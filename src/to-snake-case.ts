@@ -1,4 +1,9 @@
-/*=============================================== Convert string to_snake_case ===============================================*/
+/*=============================================== To snake case ===============================================*/
+
+/**
+ * @description Transforms a string to snake case
+ * @example toSnakeCase("hello world") => hello_world
+ */
 
 export function toSnakeCase(string: string): string | undefined {
     return string

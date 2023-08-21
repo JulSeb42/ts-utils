@@ -1,4 +1,9 @@
-/*=============================================== Get tomorrow's date in format `yyyy-mm-dd` ===============================================*/
+/*=============================================== Get tomorrow ===============================================*/
+
+/**
+ * @description Get tomorrow's date in format `yyyy-mm-dd`
+ * @example getTomorrow() => 2023-08-22
+ */
 
 export function getTomorrow(): string {
     const tomorrow = new Date(Date.now() + 3600 * 1000 * 24)

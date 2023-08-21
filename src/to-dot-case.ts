@@ -1,4 +1,9 @@
-/*=============================================== Convert string to.dot.case ===============================================*/
+/*=============================================== To dot case ===============================================*/
+
+/**
+ * @description Transforms a string to dot case
+ * @example toDotCase("hello world") => hello.world
+ */
 
 export function toDotCase(string: string): string | undefined {
     return string

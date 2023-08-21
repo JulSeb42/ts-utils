@@ -1,4 +1,9 @@
-/*=============================================== Convert string TO_CONSTANT_CASE ===============================================*/
+/*=============================================== To constant case ===============================================*/
+
+/**
+ * @description Transforms a string to constant case
+ * @example toConstantCase("hello world") => HELLO_WORLD
+ */
 
 export function toConstantCase(string: string): string | undefined {
     return string

@@ -1,4 +1,9 @@
-/*=============================================== Get random avatar from cartoon-avatar library ===============================================*/
+/*=============================================== Get random avatar ===============================================*/
+
+/**
+ * @description Get random avatar from cartoon-avatar library: https://github.com/Ashwinvalento/cartoon-avatar
+ * @example getRandomAvatar("male") => https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/male/9.png
+ */
 
 export function getRandomAvatar(gender?: "male" | "female" | "other"): string {
     const random = Math.floor(Math.random() * (114 - 1 + 1) + 1)

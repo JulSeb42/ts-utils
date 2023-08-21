@@ -1,4 +1,9 @@
-/*=============================================== Get a random date from given values ===============================================*/
+/*=============================================== Get a random date ===============================================*/
+
+/**
+ * @description Get a random date with format `yyyy-mm-dd`
+ * @example getRandomDate(2021, 2022) => 2021-09-17
+ */
 
 export function getRandomDate(minYear?: number, maxYear?: number): string {
     const thisYear = new Date().getFullYear()

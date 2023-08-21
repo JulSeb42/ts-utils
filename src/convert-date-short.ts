@@ -1,4 +1,9 @@
-/*=============================================== Convert date to `12 Aug 2023` ===============================================*/
+/*=============================================== Convert date short ===============================================*/
+
+/**
+ * @description Convert a date string to full date
+ * @example convertDateShort("2023-08-12") => 12 Aug 2023
+ */
 
 export function convertDateShort(date: Date | string): string {
     date = typeof date === "string" ? new Date(date) : date

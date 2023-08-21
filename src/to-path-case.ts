@@ -1,4 +1,9 @@
-/*=============================================== Convert string to/path/case ===============================================*/
+/*=============================================== To path case ===============================================*/
+
+/**
+ * @description Transforms a string to path case
+ * @example toPathCase("hello world") => hello/world
+ */
 
 export function toPathCase(string: string): string | undefined {
     return string

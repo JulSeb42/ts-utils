@@ -1,10 +1,19 @@
-/*=============================================== Get time now in format `hour:minutes:seconds` ===============================================*/
+/*=============================================== Get time now ===============================================*/
 
-export function getTimeNow(withSeconds?: boolean): string {
+/**
+ * @description Get the time now
+ * @example getTimeNow() => 11:22
+ */
+
+export function getTimeNow(options?: {
+    withSeconds?: boolean
+    withMiliSeconds?: boolean
+}): string {
     const today = new Date()
     let hours: number | string = today.getHours()
     let minutes: number | string = today.getMinutes()
     let seconds: number | string = today.getSeconds()
+    let mili: number | string = today.getMilliseconds()
 
     if (hours < 10) {
         hours = `0${hours}`
@@ -18,5 +27,11 @@ export function getTimeNow(withSeconds?: boolean): string {
         seconds = `0${seconds}`
     }
 
-    return `${hours}:${minutes}${withSeconds ? `:${seconds}` : ""}`
+    if (mili < 10) {
+        mili = `0${mili}`
+    }
+
+    return `${hours}:${minutes}${
+        options?.withSeconds || options?.withMiliSeconds ? `:${seconds}` : ""
+    }${options?.withMiliSeconds ? `:${mili}` : ""}`
 }

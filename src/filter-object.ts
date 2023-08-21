@@ -1,4 +1,9 @@
-/*=============================================== Filter objects ===============================================*/
+/*=============================================== Filter object ===============================================*/
+
+/**
+ * @description Filter any object by value
+ * @example filterObject({ id: 0, name: null }, ([_, v]) => v !== null) => { id: 0 }
+ */
 
 type Entry<T> = {
     [K in keyof T]: [K, T[K]]

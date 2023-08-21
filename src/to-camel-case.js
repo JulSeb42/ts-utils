@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Convert string toCamelCase ===============================================*/
+/*=============================================== To camel case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toCamelCase = void 0;
+/**
+ * @description Transforms a string to camel case
+ * @example toCamelCase("hello world") => helloWorld
+ */
 function toCamelCase(string) {
     return string
         .toLowerCase()

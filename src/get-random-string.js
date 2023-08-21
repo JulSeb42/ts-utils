@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Get a random string ===============================================*/
+/*=============================================== Get random string ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRandomString = void 0;
+/**
+ * @description Get a random string
+ * @example getRandomString() => MHFTIzosZmtqHokDtJJA
+ */
 function getRandomString(length) {
     if (length === void 0) { length = 20; }
     var randomChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

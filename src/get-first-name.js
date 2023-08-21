@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Get first name from `John Doe` ===============================================*/
+/*=============================================== Get first name ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getFirstName = void 0;
+/**
+ * @description Get first name of a full name
+ * @example getFirstName("John Doe") => John
+ */
 function getFirstName(fullName) {
     return fullName.split(" ")[0];
 }

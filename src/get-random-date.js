@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Get a random date from given values ===============================================*/
+/*=============================================== Get a random date ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRandomDate = void 0;
+/**
+ * @description Get a random date with format `yyyy-mm-dd`
+ * @example getRandomDate(2021, 2022) => 2021-09-17
+ */
 function getRandomDate(minYear, maxYear) {
     var thisYear = new Date().getFullYear();
     var getMinYear = minYear || thisYear;

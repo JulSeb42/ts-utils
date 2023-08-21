@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Convert string to.dot.case ===============================================*/
+/*=============================================== To dot case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toDotCase = void 0;
+/**
+ * @description Transforms a string to dot case
+ * @example toDotCase("hello world") => hello.world
+ */
 function toDotCase(string) {
     var _a;
     return (_a = string

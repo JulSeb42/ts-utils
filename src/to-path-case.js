@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Convert string to/path/case ===============================================*/
+/*=============================================== To path case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toPathCase = void 0;
+/**
+ * @description Transforms a string to path case
+ * @example toPathCase("hello world") => hello/world
+ */
 function toPathCase(string) {
     var _a;
     return (_a = string

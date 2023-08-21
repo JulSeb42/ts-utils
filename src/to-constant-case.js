@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Convert string TO_CONSTANT_CASE ===============================================*/
+/*=============================================== To constant case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.toConstantCase = void 0;
+/**
+ * @description Transforms a string to constant case
+ * @example toConstantCase("hello world") => HELLO_WORLD
+ */
 function toConstantCase(string) {
     var _a;
     return (_a = string

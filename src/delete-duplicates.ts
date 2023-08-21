@@ -1,4 +1,9 @@
-/*=============================================== Delete duplicates values from array ===============================================*/
+/*=============================================== Delete duplicates ===============================================*/
+
+/**
+ * @description Delete duplicated values from array
+ * @example deleteDuplicates([1, 1, 1, 2, 3]) => [1, 2, 3]
+ */
 
 export function deleteDuplicates<T>(arr: T[]): T[] {
     return arr.filter(

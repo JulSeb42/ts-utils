@@ -1,7 +1,11 @@
 "use strict";
-/*=============================================== Sort array of strings by frequency of values ===============================================*/
+/*=============================================== Sort by frequency ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sortByFrequency = void 0;
+/**
+ * @description Sort array of strings by frequency of values
+ * @example sortByFrequency(["Hello", "Foo", "baz", "hello", "heLlo", "foo"]) => hello, foo, baz
+ */
 function sortByFrequency(array) {
     var frequency = {};
     var value;

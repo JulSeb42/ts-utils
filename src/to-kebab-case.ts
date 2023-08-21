@@ -1,4 +1,9 @@
-/*=============================================== Convert string to-kebab-case ===============================================*/
+/*=============================================== To kebab case ===============================================*/
+
+/**
+ * @description Transforms a string to kebab case
+ * @example toKebabCase("hello world") => hello-world
+ */
 
 export function toKebabCase(string: string): string | undefined {
     return string

@@ -1,4 +1,9 @@
-/*=============================================== Convert string toCamelCase ===============================================*/
+/*=============================================== To camel case ===============================================*/
+
+/**
+ * @description Transforms a string to camel case
+ * @example toCamelCase("hello world") => helloWorld
+ */
 
 export function toCamelCase(string: string): string {
     return string
