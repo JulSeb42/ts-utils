@@ -2,6 +2,10 @@
 
 /**
  * @description Get a random date with format `yyyy-mm-dd`
+ * @param minYear?: number
+ * @param maxYear?: number
+ * @default minYear: current year
+ * @default maxYear: current year
  * @example getRandomDate(2021, 2022) => 2021-09-17
  */
 

@@ -2,6 +2,7 @@
 
 /**
  * @description Get first name of a full name
+ * @param fullName: string
  * @example getFirstName("John Doe") => John
  */
 

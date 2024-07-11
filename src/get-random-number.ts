@@ -2,6 +2,10 @@
 
 /**
  * @description Get random number between set values
+ * @param min?: number
+ * @param max?: number
+ * @default min: 0
+ * @default max: 100
  * @example getRandomNumber(18, 56) => 42
  */
 

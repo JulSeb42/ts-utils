@@ -2,6 +2,7 @@
 
 /**
  * @description Sort array of strings by frequency of values
+ * @param array: string[]
  * @example sortByFrequency(["Hello", "Foo", "baz", "hello", "heLlo", "foo"]) => hello, foo, baz
  */
 

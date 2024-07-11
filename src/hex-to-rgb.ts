@@ -2,6 +2,7 @@
 
 /**
  * @description Convert a Hex value to RGB
+ * @param hex: string
  * @example hexToRgb("#1B4568") => (27, 69, 104)
  */
 

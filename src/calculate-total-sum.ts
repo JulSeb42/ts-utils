@@ -2,6 +2,7 @@
 
 /**
  * @description Calculate the total sum of an array
+ * @param arr: number[]
  * @example calculateTotalSum([1, 2, 3, 4]) => 10
  */
 

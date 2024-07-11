@@ -1,12 +1,17 @@
 /*=============================================== To pascal case ===============================================*/
 
+import { toBaseCase } from "./to-base-case"
+
 /**
  * @description Transforms a string to pascal case
+ * @param string: string
  * @example toPascalCase("hello world") => HelloWorld
  */
 
 export function toPascalCase(string: string): string | undefined {
-    return string
+    const formattedString = toBaseCase(string)
+
+    return formattedString
         .toLowerCase()
         .replace(new RegExp(/[-_]+/g), " ")
         .replace(new RegExp(/[^\w\s]/g), "")

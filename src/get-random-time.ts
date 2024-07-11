@@ -2,6 +2,12 @@
 
 /**
  * @description Get a random time
+ * @param min?: number
+ * @param max?: number
+ * @param withSeconds?: boolean
+ * @default min: 0
+ * @default max: 23
+ * @default withSeconds: false
  * @example getRandomTime() => 03:04
  */
 
@@ -10,10 +16,7 @@ export function getRandomTime(
     max = 23,
     withSeconds?: boolean
 ): string {
-    const getMin = min
-    const getMax = max
-    let hour: number | string =
-        Math.floor(Math.random() * (getMax - getMin)) + getMin
+    let hour: number | string = Math.floor(Math.random() * (max - min)) + min
     let minutes: number | string = Math.floor(Math.random() * (59 - 0) + 0)
     let seconds: number | string = Math.floor(Math.random() * (59 - 0) + 0)
 

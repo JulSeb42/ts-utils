@@ -2,6 +2,7 @@
 
 /**
  * @description Get the time now
+ * @param options?: { withSeconds?: boolean; withMiliSeconds?: boolean }
  * @example getTimeNow() => 11:22
  */
 

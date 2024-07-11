@@ -1,13 +1,18 @@
 /*=============================================== To sentence case ===============================================*/
 
+import { toBaseCase } from "./to-base-case"
+
 /**
  * @description Transforms a string to sentence case
+ * @param string: string
  * @example toSentenceCase("hello world") => Hello world
  */
 
 export function toSentenceCase(string: string): string | undefined {
+    const formattedString = toBaseCase(string)
+
     return (
-        string.toLowerCase().charAt(0).toUpperCase() +
-        string.slice(1).toLowerCase()
+        formattedString.toLowerCase().charAt(0).toUpperCase() +
+        formattedString.slice(1).toLowerCase()
     )
 }

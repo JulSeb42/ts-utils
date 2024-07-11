@@ -2,6 +2,7 @@
 
 /**
  * @description Calculate an average number for an array of numbers
+ * @param arr: number[]
  * @example calculateAverage([1, 2, 3, 4])
  */
 

@@ -1,12 +1,17 @@
 /*=============================================== To snake case ===============================================*/
 
+import { toBaseCase } from "./to-base-case"
+
 /**
  * @description Transforms a string to snake case
+ * @param string: string
  * @example toSnakeCase("hello world") => hello_world
  */
 
 export function toSnakeCase(string: string): string | undefined {
-    return string
+    const formattedString = toBaseCase(string)
+
+    return formattedString
         .match(
             /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
         )

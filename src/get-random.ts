@@ -2,6 +2,7 @@
 
 /**
  * @description Get a random value from an array
+ * @param arr: T[]
  * @example getRandom([1, 2, 3, 4]) => 3
  */
 

@@ -2,6 +2,7 @@
 
 /**
  * @description Transform a value to `{value}px`
+ * @param number: number | string
  * @example stringifyPx(123) => 123px
  */
 

@@ -2,6 +2,7 @@
 
 /**
  * @description Capitalize a string
+ * @param str: string
  * @example capitalize("hello world") => Hello world
  */
 

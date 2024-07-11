@@ -2,6 +2,8 @@
 
 /**
  * @description Get a random string
+ * @param length?: number
+ * @default length: 20
  * @example getRandomString() => MHFTIzosZmtqHokDtJJA
  */
 

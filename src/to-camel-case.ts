@@ -1,12 +1,17 @@
 /*=============================================== To camel case ===============================================*/
 
+import { toBaseCase } from "./to-base-case"
+
 /**
  * @description Transforms a string to camel case
+ * @param string: string
  * @example toCamelCase("hello world") => helloWorld
  */
 
 export function toCamelCase(string: string): string {
-    return string
+    const formattedString = toBaseCase(string)
+
+    return formattedString
         .toLowerCase()
         .replace(new RegExp(/[-_]+/g), " ")
         .replace(new RegExp(/[^\w\s]/g), "")
