@@ -1,13 +1,13 @@
 "use strict";
 /*=============================================== Get tomorrow ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTomorrow = void 0;
+exports.getYesterday = void 0;
 /**
- * @description Get tomorrow's date in format `yyyy-mm-dd`
- * @example getTomorrow() => 2023-08-22
+ * @description Get yesterday's date in format `yyyy-mm-dd`
+ * @example getYesterday() => 2023-08-20
  */
-function getTomorrow() {
-    var tomorrow = new Date(Date.now() + 3600 * 1000 * 24);
+function getYesterday() {
+    var tomorrow = new Date(Date.now() - 3600 * 1000 * 24);
     var dd = tomorrow.getDate();
     var mm = tomorrow.getMonth() + 1;
     var yy = tomorrow.getFullYear();
@@ -19,4 +19,4 @@ function getTomorrow() {
     }
     return "".concat(yy, "-").concat(mm, "-").concat(dd);
 }
-exports.getTomorrow = getTomorrow;
+exports.getYesterday = getYesterday;
