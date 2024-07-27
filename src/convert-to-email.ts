@@ -6,8 +6,7 @@ import { slugify } from "./slugify"
  * @description Converts a string to an email address
  * @param name: string
  * @param domain?: string
- * @default domain: "email.com"
- * @example convertToEmail("Foo Baz") => foo-baz@email.com
+ * @example convertToEmail("Foo Baz") => foo.baz@email.com
  */
 
 export function convertToEmail(name: string, domain = "email.com"): string {

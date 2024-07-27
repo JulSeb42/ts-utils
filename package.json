@@ -1,6 +1,6 @@
 {
     "name": "ts-utils-julseb",
-    "version": "2.3.8",
+    "version": "2.4.0",
     "private": false,
     "description": "Small utils components in TypeScript",
     "main": "index.js",

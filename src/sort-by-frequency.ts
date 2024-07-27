@@ -2,16 +2,16 @@
 
 /**
  * @description Sort array of strings by frequency of values
- * @param array: string[]
+ * @param array: T[]
  * @example sortByFrequency(["Hello", "Foo", "baz", "hello", "heLlo", "foo"]) => hello, foo, baz
  */
 
-export function sortByFrequency(array: string[]): string[] {
+export function sortByFrequency<T>(array: T[]): string[] {
     let frequency: any = {}
     let value: string
 
     for (let i = 0; i < array.length; i++) {
-        value = array[i].toLowerCase()
+        value = (array[i] as any).toLowerCase()
 
         if (value in frequency) {
             frequency[value]++

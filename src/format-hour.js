@@ -9,7 +9,7 @@ exports.formatHour = void 0;
  */
 function formatHour(hour) {
     var hourTime = (hour < 10 ? "0" : "") + Math.floor(hour);
-    var minutes = hour % 1 !== 0 ? 3 : 0 + "0";
+    var minutes = "".concat(hour % 1 !== 0 ? 3 : 0, "0");
     return "".concat(hourTime, ":").concat(minutes);
 }
 exports.formatHour = formatHour;

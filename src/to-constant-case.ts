@@ -3,7 +3,7 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string to constant case
+ * @description Transforms a string TO_CONSTANT_CASE
  * @param string: string
  * @example toConstantCase("hello world") => HELLO_WORLD
  */

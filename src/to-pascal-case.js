@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.toPascalCase = void 0;
 var to_base_case_1 = require("./to-base-case");
 /**
- * @description Transforms a string to pascal case
+ * @description Transforms a string ToPascalCase
  * @param string: string
  * @example toPascalCase("hello world") => HelloWorld
  */

@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sortByFrequency = void 0;
 /**
  * @description Sort array of strings by frequency of values
- * @param array: string[]
+ * @param array: T[]
  * @example sortByFrequency(["Hello", "Foo", "baz", "hello", "heLlo", "foo"]) => hello, foo, baz
  */
 function sortByFrequency(array) {

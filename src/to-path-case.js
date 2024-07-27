@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.toPathCase = void 0;
 var to_base_case_1 = require("./to-base-case");
 /**
- * @description Transforms a string to path case
+ * @description Transforms a string to/path/case
  * @param string: string
  * @example toPathCase("hello world") => hello/world
  */

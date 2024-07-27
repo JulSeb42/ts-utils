@@ -3,7 +3,7 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string to snake case
+ * @description Transforms a string to_snake_case
  * @param string: string
  * @example toSnakeCase("hello world") => hello_world
  */

@@ -3,7 +3,7 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string to dot case
+ * @description Transforms a string to.dot.case
  * @param string: string
  * @example toDotCase("hello world") => hello.world
  */

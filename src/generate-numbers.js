@@ -7,9 +7,6 @@ exports.generateNumbers = void 0;
  * @param min?: number
  * @param max?: number
  * @param step?: number
- * @default min: 0
- * @default max: 100
- * @default step: 1
  * @example generateNumbers(0, 4) => [0, 1, 2, 3, 4]
  */
 function generateNumbers(min, max, step) {

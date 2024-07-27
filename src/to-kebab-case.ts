@@ -3,7 +3,7 @@
 import { slugify } from "./slugify"
 
 /**
- * @description Transforms a string to kebab case
+ * @description Transforms a string to-kebab-case
  * @param string: string
  * @example toKebabCase("hello world") => hello-world
  */

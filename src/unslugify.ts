@@ -8,6 +8,6 @@ import { toSentenceCase } from "./to-sentence-case"
  * @example unslugify("hello_world-foo") => Hello world foo
  */
 
-export function unslugify(str: string): string | undefined {
-    return toSentenceCase(str.replace(/-/g, " ").replace(/_/g, " "))
+export function unslugify(string: string): string | undefined {
+    return toSentenceCase(string.replace(/-/g, " ").replace(/_/g, " "))
 }

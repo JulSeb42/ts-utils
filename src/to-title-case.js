@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.toTitleCase = void 0;
 var to_base_case_1 = require("./to-base-case");
 /**
- * @description Transforms a string to title case
+ * @description Transforms a string To Title Case
  * @param string: string
  * @example toTitleCase("hello world") => Hello World
  */

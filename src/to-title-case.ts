@@ -3,7 +3,7 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string to title case
+ * @description Transforms a string To Title Case
  * @param string: string
  * @example toTitleCase("hello world") => Hello World
  */

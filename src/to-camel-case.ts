@@ -3,7 +3,7 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string to camel case
+ * @description Transforms a string toCamelCase
  * @param string: string
  * @example toCamelCase("hello world") => helloWorld
  */

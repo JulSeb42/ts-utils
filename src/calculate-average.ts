@@ -2,10 +2,10 @@
 
 /**
  * @description Calculate an average number for an array of numbers
- * @param arr: number[]
- * @example calculateAverage([1, 2, 3, 4])
+ * @param array: number[]
+ * @example calculateAverage([1, 2, 3, 4]) => 2.5
  */
 
-export function calculateAverage(arr: number[]): number {
-    return arr.reduce((a, b) => a + b, 0) / arr.length
+export function calculateAverage(array: number[]): number {
+    return array.reduce((a, b) => a + b, 0) / array.length
 }

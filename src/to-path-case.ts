@@ -3,7 +3,7 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string to path case
+ * @description Transforms a string to/path/case
  * @param string: string
  * @example toPathCase("hello world") => hello/world
  */

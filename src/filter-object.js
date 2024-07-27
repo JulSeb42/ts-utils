@@ -15,19 +15,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.filterObject = void 0;
 /**
  * @description Filter any object by value
- * @param obj: T
- * @param fn: (entry: Entry<T>, i: number, arr: Entry<T>[]) => boolean
+ * @param object: T
+ * @param callback: (entry: Entry<T>, i: number, arr: Entry<T>[]) => boolean
  * @example filterObject({ id: 0, name: null }, ([_, v]) => v !== null) => { id: 0 }
  */
-function filterObject(obj, fn) {
-    var next = __assign({}, obj);
+function filterObject(object, callback) {
+    var next = __assign({}, object);
     var entries = [];
-    for (var key in obj) {
-        entries.push([key, obj[key]]);
+    for (var key in object) {
+        entries.push([key, object[key]]);
     }
     for (var i = 0; i < entries.length; i++) {
         var entry = entries[i];
-        if (!fn(entry, i, entries)) {
+        if (!callback(entry, i, entries)) {
             delete next[entry[0]];
         }
     }

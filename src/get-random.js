@@ -4,10 +4,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getRandom = void 0;
 /**
  * @description Get a random value from an array
- * @param arr: T[]
+ * @param array: T[]
  * @example getRandom([1, 2, 3, 4]) => 3
  */
-function getRandom(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+function getRandom(array) {
+    return array[Math.floor(Math.random() * array.length)];
 }
 exports.getRandom = getRandom;

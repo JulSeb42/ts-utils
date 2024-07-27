@@ -1,7 +1,7 @@
 /*=============================================== Convert date ===============================================*/
 
 /**
- * @description Convert a date string to full date
+ * @description Convert a date string to a full date
  * @param date: Date | string
  * @example convertDateShort("2023-08-12") => 12 August 2023
  */

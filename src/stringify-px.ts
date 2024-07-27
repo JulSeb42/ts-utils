@@ -2,14 +2,14 @@
 
 /**
  * @description Transform a value to `{value}px`
- * @param number: number | string
+ * @param value: number | string
  * @example stringifyPx(123) => 123px
  */
 
-export function stringifyPx(number: number | string): string {
-    if (typeof number === "string") {
-        return number
+export function stringifyPx(value: number | string): string {
+    if (typeof value === "string") {
+        return value
     } else {
-        return `${number}px`
+        return `${value}px`
     }
 }

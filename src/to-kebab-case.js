@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.toKebabCase = void 0;
 var slugify_1 = require("./slugify");
 /**
- * @description Transforms a string to kebab case
+ * @description Transforms a string to-kebab-case
  * @param string: string
  * @example toKebabCase("hello world") => hello-world
  */

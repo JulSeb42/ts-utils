@@ -6,5 +6,10 @@
  */
 
 export function disableScroll(): void {
-    return document.body.classList.add("stop-scrolling")
+    const body = document.body
+
+    body.style.height = "100vh"
+    body.style.overflow = "hidden"
+
+    return
 }

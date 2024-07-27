@@ -7,8 +7,7 @@ var slugify_1 = require("./slugify");
  * @description Converts a string to an email address
  * @param name: string
  * @param domain?: string
- * @default domain: "email.com"
- * @example convertToEmail("Foo Baz") => foo-baz@email.com
+ * @example convertToEmail("Foo Baz") => foo.baz@email.com
  */
 function convertToEmail(name, domain) {
     if (domain === void 0) { domain = "email.com"; }

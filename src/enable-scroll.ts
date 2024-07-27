@@ -6,5 +6,10 @@
  */
 
 export function enableScroll(): void {
-    return document.body.classList.remove("stop-scrolling")
+    const body = document.body
+
+    body.style.height = ""
+    body.style.overflow = ""
+
+    return
 }

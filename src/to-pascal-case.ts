@@ -3,7 +3,7 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string to pascal case
+ * @description Transforms a string ToPascalCase
  * @param string: string
  * @example toPascalCase("hello world") => HelloWorld
  */

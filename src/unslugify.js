@@ -8,7 +8,7 @@ var to_sentence_case_1 = require("./to-sentence-case");
  * @param string: string
  * @example unslugify("hello_world-foo") => Hello world foo
  */
-function unslugify(str) {
-    return (0, to_sentence_case_1.toSentenceCase)(str.replace(/-/g, " ").replace(/_/g, " "));
+function unslugify(string) {
+    return (0, to_sentence_case_1.toSentenceCase)(string.replace(/-/g, " ").replace(/_/g, " "));
 }
 exports.unslugify = unslugify;

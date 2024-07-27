@@ -7,6 +7,9 @@ exports.disableScroll = void 0;
  * @example disableScroll()
  */
 function disableScroll() {
-    return document.body.classList.add("stop-scrolling");
+    var body = document.body;
+    body.style.height = "100vh";
+    body.style.overflow = "hidden";
+    return;
 }
 exports.disableScroll = disableScroll;

@@ -8,7 +8,7 @@
 
 export function formatHour(hour: number): string {
     const hourTime = (hour < 10 ? "0" : "") + Math.floor(hour)
-    const minutes = hour % 1 !== 0 ? 3 : 0 + "0"
+    const minutes = `${hour % 1 !== 0 ? 3 : 0}0`
 
     return `${hourTime}:${minutes}`
 }
