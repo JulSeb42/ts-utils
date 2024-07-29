@@ -8,12 +8,14 @@ exports.getRandomString = void 0;
  * @default length: 20
  * @example getRandomString() => MHFTIzosZmtqHokDtJJA
  */
-function getRandomString(length) {
+function getRandomString(length, noNumbers) {
     if (length === void 0) { length = 20; }
-    var randomChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var randomChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    var numbers = "0123456789";
+    var fullString = noNumbers ? randomChars : "".concat(randomChars).concat(numbers);
     var result = "";
     for (var i = 0; i < length; i++) {
-        result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+        result += fullString.charAt(Math.floor(Math.random() * fullString.length));
     }
     return result;
 }

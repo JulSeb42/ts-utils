@@ -7,14 +7,17 @@
  * @example getRandomString() => MHFTIzosZmtqHokDtJJA
  */
 
-export function getRandomString(length = 20): string {
-    const randomChars =
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+export function getRandomString(length = 20, noNumbers?: boolean): string {
+    const randomChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+    const numbers = "0123456789"
+
+    const fullString = noNumbers ? randomChars : `${randomChars}${numbers}`
+
     let result = ""
 
     for (let i = 0; i < length; i++) {
-        result += randomChars.charAt(
-            Math.floor(Math.random() * randomChars.length)
+        result += fullString.charAt(
+            Math.floor(Math.random() * fullString.length)
         )
     }
 
