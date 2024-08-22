@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== To title case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.toTitleCase = void 0;
+exports.toTitleCase = toTitleCase;
 var to_base_case_1 = require("./to-base-case");
 /**
  * @description Transforms a string To Title Case
@@ -16,4 +16,3 @@ function toTitleCase(string) {
     }
     return arr.join(" ");
 }
-exports.toTitleCase = toTitleCase;

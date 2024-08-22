@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Unslugify ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.unslugify = void 0;
+exports.unslugify = unslugify;
 var to_sentence_case_1 = require("./to-sentence-case");
 /**
  * @description Unslugify a string
@@ -11,4 +11,3 @@ var to_sentence_case_1 = require("./to-sentence-case");
 function unslugify(string) {
     return (0, to_sentence_case_1.toSentenceCase)(string.replace(/-/g, " ").replace(/_/g, " "));
 }
-exports.unslugify = unslugify;

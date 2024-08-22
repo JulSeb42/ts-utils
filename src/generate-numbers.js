@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Generate numbers ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateNumbers = void 0;
+exports.generateNumbers = generateNumbers;
 /**
  * @description Generates an array of numbers
  * @param min?: number
@@ -19,4 +19,3 @@ function generateNumbers(min, max, step) {
     }
     return arr;
 }
-exports.generateNumbers = generateNumbers;

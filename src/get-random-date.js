@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get a random date ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandomDate = void 0;
+exports.getRandomDate = getRandomDate;
 /**
  * @description Get a random date with format `yyyy-mm-dd`
  * @param minYear?: number
@@ -28,4 +28,3 @@ function getRandomDate(minYear, maxYear) {
     }
     return "".concat(year, "-").concat(month, "-").concat(day);
 }
-exports.getRandomDate = getRandomDate;

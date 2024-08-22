@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Detect language ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.detectLanguage = void 0;
+exports.detectLanguage = detectLanguage;
 /**
  * @description Detects `lang` value in local storage or from navigator
  * @example detectLanguage() => fr
@@ -19,4 +19,3 @@ function detectLanguage() {
         }
     }
 }
-exports.detectLanguage = detectLanguage;

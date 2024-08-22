@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get random avatar ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandomAvatar = void 0;
+exports.getRandomAvatar = getRandomAvatar;
 /**
  * @description Get random avatar from cartoon-avatar library: https://github.com/Ashwinvalento/cartoon-avatar
  * @param gender?: "male" | "female" | "other"
@@ -20,4 +20,3 @@ function getRandomAvatar(gender) {
             : mf[randomMf];
     return "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/".concat(genderPicture, "/").concat(random, ".png");
 }
-exports.getRandomAvatar = getRandomAvatar;

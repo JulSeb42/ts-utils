@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== To kebab case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.toKebabCase = void 0;
+exports.toKebabCase = toKebabCase;
 var slugify_1 = require("./slugify");
 /**
  * @description Transforms a string to-kebab-case
@@ -11,4 +11,3 @@ var slugify_1 = require("./slugify");
 function toKebabCase(string) {
     return (0, slugify_1.slugify)(string);
 }
-exports.toKebabCase = toKebabCase;

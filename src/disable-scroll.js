@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Disable scroll ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.disableScroll = void 0;
+exports.disableScroll = disableScroll;
 /**
  * @description Disable page scroll
  * @example disableScroll()
@@ -12,4 +12,3 @@ function disableScroll() {
     body.style.overflow = "hidden";
     return;
 }
-exports.disableScroll = disableScroll;

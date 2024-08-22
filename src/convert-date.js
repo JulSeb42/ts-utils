@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Convert date ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertDate = void 0;
+exports.convertDate = convertDate;
 /**
  * @description Convert a date string to a full date
  * @param date: Date | string
@@ -44,4 +44,3 @@ function convertDate(date) {
                                                     : "Error in date";
     return "".concat(day, " ").concat(convertedMonth, " ").concat(year);
 }
-exports.convertDate = convertDate;

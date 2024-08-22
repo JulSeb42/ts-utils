@@ -10,7 +10,7 @@ export function formatDate(date: Date | string): string {
     const formattedDate = new Date(date.toString())
 
     const year = formattedDate.getFullYear()
-    let month: string | number = formattedDate.getMonth()
+    let month: string | number = formattedDate.getMonth() + 1
     let day: string | number = formattedDate.getDate()
 
     if (month < 10) month = `0${month}`

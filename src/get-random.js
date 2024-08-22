@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get random ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandom = void 0;
+exports.getRandom = getRandom;
 /**
  * @description Get a random value from an array
  * @param array: T[]
@@ -10,4 +10,3 @@ exports.getRandom = void 0;
 function getRandom(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
-exports.getRandom = getRandom;

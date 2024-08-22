@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get today ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getToday = void 0;
+exports.getToday = getToday;
 /**
  * @description Get today's date in format `yyyy-mm-dd`
  * @example getToday() => 2023-08-21
@@ -19,4 +19,3 @@ function getToday() {
     }
     return "".concat(yy, "-").concat(mm, "-").concat(dd);
 }
-exports.getToday = getToday;

@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Convert Youtube link ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertYoutube = void 0;
+exports.convertYoutube = convertYoutube;
 /**
  * @description Converts a YouTube url to an embed url
  * @param url: string
@@ -10,4 +10,3 @@ exports.convertYoutube = void 0;
 function convertYoutube(url) {
     return url.replace("watch?v=", "embed/");
 }
-exports.convertYoutube = convertYoutube;

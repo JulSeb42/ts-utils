@@ -46,3 +46,6 @@ export * from "./src/uuid"
 
 export * from "./src/convert-to-email"
 export * from "./src/unslugify"
+export * from "./src/add-day"
+export * from "./src/add-month"
+export * from "./src/add-year"

@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Sort by frequency ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.sortByFrequency = void 0;
+exports.sortByFrequency = sortByFrequency;
 /**
  * @description Sort array of strings by frequency of values
  * @param array: T[]
@@ -31,4 +31,3 @@ function sortByFrequency(array) {
     };
     return uniques.sort(compareFrequency);
 }
-exports.sortByFrequency = sortByFrequency;

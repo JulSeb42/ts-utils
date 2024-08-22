@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Hex to RGB ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.hexToRgb = void 0;
+exports.hexToRgb = hexToRgb;
 /**
  * @description Convert a Hex value to RGB
  * @param hex: string
@@ -16,4 +16,3 @@ function hexToRgb(hex) {
     var b = parseInt(result[3], 16);
     return "(".concat(r, ", ").concat(g, ", ").concat(b, ")");
 }
-exports.hexToRgb = hexToRgb;

@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get random number ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandomNumber = void 0;
+exports.getRandomNumber = getRandomNumber;
 /**
  * @description Get random number between set values
  * @param min?: number
@@ -15,4 +15,3 @@ function getRandomNumber(min, max) {
     if (max === void 0) { max = 100; }
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-exports.getRandomNumber = getRandomNumber;

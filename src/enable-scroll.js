@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Enable scroll ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.enableScroll = void 0;
+exports.enableScroll = enableScroll;
 /**
  * @description Enable page scroll
  * @example enableScroll()
@@ -12,4 +12,3 @@ function enableScroll() {
     body.style.overflow = "";
     return;
 }
-exports.enableScroll = enableScroll;
