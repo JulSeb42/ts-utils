@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Convert date short ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertDateShort = convertDateShort;
+exports.convertDateShort = void 0;
 /**
  * @description Convert a date string to a short date
  * @param date: Date | string
@@ -44,3 +44,4 @@ function convertDateShort(date) {
                                                     : "Error in date";
     return "".concat(day, " ").concat(convertedMonth, " ").concat(year);
 }
+exports.convertDateShort = convertDateShort;

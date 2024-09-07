@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Add year ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addYear = addYear;
+exports.addYear = void 0;
 var get_today_1 = require("./get-today");
 /**
  * @description Add a number of years to a set date
@@ -14,3 +14,4 @@ function addYear(numberOfYears, dateFrom) {
     var date = new Date(dateFrom);
     return new Date(date.setFullYear(date.getFullYear() + numberOfYears));
 }
+exports.addYear = addYear;

@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Format date ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.formatDate = formatDate;
+exports.formatDate = void 0;
 /**
  * @description Format a Date to `yyyy-mm-dd`
  * @param date: Date | string
@@ -18,3 +18,4 @@ function formatDate(date) {
         day = "0".concat(day);
     return "".concat(year, "-").concat(month, "-").concat(day);
 }
+exports.formatDate = formatDate;

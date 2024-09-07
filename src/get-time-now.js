@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get time now ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTimeNow = getTimeNow;
+exports.getTimeNow = void 0;
 /**
  * @description Get the time now
  * @param options?: { withSeconds?: boolean; withMiliSeconds?: boolean }
@@ -27,3 +27,4 @@ function getTimeNow(options) {
     }
     return "".concat(hours, ":").concat(minutes).concat((options === null || options === void 0 ? void 0 : options.withSeconds) || (options === null || options === void 0 ? void 0 : options.withMiliSeconds) ? ":".concat(seconds) : "").concat((options === null || options === void 0 ? void 0 : options.withMiliSeconds) ? ":".concat(mili) : "");
 }
+exports.getTimeNow = getTimeNow;

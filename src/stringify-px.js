@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Stringify px ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.stringifyPx = stringifyPx;
+exports.stringifyPx = void 0;
 /**
  * @description Transform a value to `{value}px`
  * @param value: number | string
@@ -15,3 +15,4 @@ function stringifyPx(value) {
         return "".concat(value, "px");
     }
 }
+exports.stringifyPx = stringifyPx;

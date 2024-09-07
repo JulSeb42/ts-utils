@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Slugify ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.slugify = slugify;
+exports.slugify = void 0;
 var to_base_case_1 = require("./to-base-case");
 /**
  * @description Slugify string
@@ -23,3 +23,4 @@ function slugify(string) {
         .replace(/-+/g, "-");
     return formattedString;
 }
+exports.slugify = slugify;

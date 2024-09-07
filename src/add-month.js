@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Add month ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addMonth = addMonth;
+exports.addMonth = void 0;
 var get_today_1 = require("./get-today");
 /**
  * @description Add a number of months to a set date
@@ -14,3 +14,4 @@ function addMonth(numberOfMonths, dateFrom) {
     var date = new Date(dateFrom);
     return new Date(date.setMonth(date.getMonth() + numberOfMonths));
 }
+exports.addMonth = addMonth;

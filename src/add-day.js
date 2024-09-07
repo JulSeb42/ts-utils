@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Add day ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.addDay = addDay;
+exports.addDay = void 0;
 var get_today_1 = require("./get-today");
 /**
  * @description Add a number of days to a set date
@@ -14,3 +14,4 @@ function addDay(numberOfDays, dateFrom) {
     var date = new Date(dateFrom);
     return new Date(date.setDate(date.getDate() + numberOfDays));
 }
+exports.addDay = addDay;

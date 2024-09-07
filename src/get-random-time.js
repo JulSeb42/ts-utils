@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get random time ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandomTime = getRandomTime;
+exports.getRandomTime = void 0;
 /**
  * @description Get a random time
  * @param min?: number
@@ -29,3 +29,4 @@ function getRandomTime(min, max, withSeconds) {
     }
     return "".concat(hour, ":").concat(minutes).concat(withSeconds ? ":".concat(seconds) : "");
 }
+exports.getRandomTime = getRandomTime;

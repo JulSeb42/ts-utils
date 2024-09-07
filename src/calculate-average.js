@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Calculate average ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.calculateAverage = calculateAverage;
+exports.calculateAverage = void 0;
 /**
  * @description Calculate an average number for an array of numbers
  * @param array: number[]
@@ -10,3 +10,4 @@ exports.calculateAverage = calculateAverage;
 function calculateAverage(array) {
     return array.reduce(function (a, b) { return a + b; }, 0) / array.length;
 }
+exports.calculateAverage = calculateAverage;

@@ -12,7 +12,7 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.filterObject = filterObject;
+exports.filterObject = void 0;
 /**
  * @description Filter any object by value
  * @param object: T
@@ -33,3 +33,4 @@ function filterObject(object, callback) {
     }
     return next;
 }
+exports.filterObject = filterObject;

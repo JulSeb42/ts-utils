@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== To base case ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.toBaseCase = toBaseCase;
+exports.toBaseCase = void 0;
 // ! DO NOT EXPORT THIS COMPONENT FROM LIBRARY
 function toBaseCase(string) {
     var splitted = string
@@ -15,3 +15,4 @@ function toBaseCase(string) {
     }
     return splitted;
 }
+exports.toBaseCase = toBaseCase;

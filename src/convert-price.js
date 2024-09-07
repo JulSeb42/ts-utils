@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Convert price to 100,00 € ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertPrice = convertPrice;
+exports.convertPrice = void 0;
 /**
  * @description Convert a price with currency
  * @param price: number
@@ -17,3 +17,4 @@ function convertPrice(price, currency) {
     });
     return formatter.format(price);
 }
+exports.convertPrice = convertPrice;

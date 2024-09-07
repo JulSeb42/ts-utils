@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get tomorrow ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTomorrow = getTomorrow;
+exports.getTomorrow = void 0;
 /**
  * @description Get tomorrow's date in format `yyyy-mm-dd`
  * @example getTomorrow() => 2023-08-22
@@ -19,3 +19,4 @@ function getTomorrow() {
     }
     return "".concat(yy, "-").concat(mm, "-").concat(dd);
 }
+exports.getTomorrow = getTomorrow;

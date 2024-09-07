@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Get random string ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getRandomString = getRandomString;
+exports.getRandomString = void 0;
 /**
  * @description Get a random string
  * @param length?: number
@@ -19,3 +19,4 @@ function getRandomString(length, noNumbers) {
     }
     return result;
 }
+exports.getRandomString = getRandomString;

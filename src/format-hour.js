@@ -1,7 +1,7 @@
 "use strict";
 /*=============================================== Format hour ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.formatHour = formatHour;
+exports.formatHour = void 0;
 /**
  * @description Format hour with half times
  * @param hour: number
@@ -12,3 +12,4 @@ function formatHour(hour) {
     var minutes = "".concat(hour % 1 !== 0 ? 3 : 0, "0");
     return "".concat(hourTime, ":").concat(minutes);
 }
+exports.formatHour = formatHour;

@@ -1,15 +1,13 @@
 {
-    "name": "ts-utils-julseb",
-    "version": "2.4.5",
+    "name": "@julseb-lib/utils",
+    "version": "0.0.1",
     "private": false,
     "description": "Small utils components in TypeScript",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "clean": "rm -rf ./lib && rm -rf ./src/*.js && rm -rf ./index.js",
-        "move-to-lib": "mv ./src/*.js ./lib",
-        "build-all": "npm run clean && tsc",
-        "build": "babel src -d lib"
+        "build": "npm run clean && tsc"
     },
     "author": "Julien Sebag",
     "license": "MIT",
