@@ -1,7 +1,5 @@
 {
-    "include": [
-        "./**/*"
-    ],
+    "include": ["./**/*"],
     "compilerOptions": {
         "strict": true,
         // "declaration": true,
@@ -10,11 +8,6 @@
         "skipLibCheck": true
     },
     "target": "es5",
-    "lib": [
-        "es5",
-        "DOM"
-    ],
-    "exclude": [
-        "./node_modules"
-    ]
+    "lib": ["es5", "DOM"],
+    "exclude": ["./node_modules"]
 }
