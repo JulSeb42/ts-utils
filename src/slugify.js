@@ -2,14 +2,13 @@
 /*=============================================== Slugify ===============================================*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.slugify = void 0;
-var to_base_case_1 = require("./to-base-case");
 /**
  * @description Slugify string
  * @param string: string
  * @example slugify("Hello World") => hello-world
  */
 function slugify(string) {
-    var formattedString = (0, to_base_case_1.toBaseCase)(string);
+    var formattedString = string.toLowerCase().replaceAll(" ", "-");
     formattedString = formattedString.replace(/^\s+|\s+$/g, "");
     formattedString = formattedString.toLowerCase();
     var from = "àáäâèéëêìíïîòóöôùúüûñç·/_,:;-";

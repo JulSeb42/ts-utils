@@ -9,7 +9,7 @@ import { toBaseCase } from "./to-base-case"
  */
 
 export function slugify(string: string): string {
-    let formattedString = toBaseCase(string)
+    let formattedString = string.toLowerCase().replaceAll(" ", "-")
 
     formattedString = formattedString.replace(/^\s+|\s+$/g, "")
     formattedString = formattedString.toLowerCase()

@@ -5,9 +5,9 @@
         // "declaration": true,
         "esModuleInterop": true,
         "downlevelIteration": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "target": "es5",
+        "lib": ["es5", "DOM", "es2021"]
     },
-    "target": "es5",
-    "lib": ["es5", "DOM"],
     "exclude": ["./node_modules"]
 }
