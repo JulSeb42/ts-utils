@@ -1,5 +1,3 @@
-/*=============================================== Get tomorrow ===============================================*/
-
 /**
  * @description Get yesterday's date in format `yyyy-mm-dd`
  * @example getYesterday() => 2023-08-20

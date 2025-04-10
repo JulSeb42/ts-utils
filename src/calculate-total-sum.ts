@@ -1,5 +1,3 @@
-/*=============================================== Calculate total sum ===============================================*/
-
 /**
  * @description Calculate the total sum of an array
  * @param array: number[]

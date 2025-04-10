@@ -1,5 +1,3 @@
-/*=============================================== Scroll to top ===============================================*/
-
 /**
  * @description Scroll to top of the page
  * @example scrollToTop()

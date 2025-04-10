@@ -1,7 +1,3 @@
-/*=============================================== Slugify ===============================================*/
-
-import { toBaseCase } from "./to-base-case"
-
 /**
  * @description Slugify string
  * @param string: string

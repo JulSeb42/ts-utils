@@ -1,5 +1,3 @@
-/*=============================================== Format date ===============================================*/
-
 /**
  * @description Format a Date to `yyyy-mm-dd`
  * @param date: Date | string

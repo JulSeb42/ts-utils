@@ -1,5 +1,3 @@
-/*=============================================== To base case ===============================================*/
-
 // ! DO NOT EXPORT THIS COMPONENT FROM LIBRARY
 
 export function toBaseCase(string: string): string {

@@ -1,5 +1,3 @@
-/*=============================================== Calculate average ===============================================*/
-
 /**
  * @description Calculate an average number for an array of numbers
  * @param array: number[]

@@ -1,5 +1,3 @@
-/*=============================================== Enable scroll ===============================================*/
-
 /**
  * @description Enable page scroll
  * @example enableScroll()

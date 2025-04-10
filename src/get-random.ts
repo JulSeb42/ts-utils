@@ -1,5 +1,3 @@
-/*=============================================== Get random ===============================================*/
-
 /**
  * @description Get a random value from an array
  * @param array: T[]

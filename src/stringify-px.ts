@@ -1,5 +1,3 @@
-/*=============================================== Stringify px ===============================================*/
-
 /**
  * @description Transform a value to `{value}px`
  * @param value: number | string

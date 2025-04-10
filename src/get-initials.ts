@@ -1,5 +1,3 @@
-/*=============================================== Get initials ===============================================*/
-
 /**
  * @description Get initials of a full name
  * @param fullName: string

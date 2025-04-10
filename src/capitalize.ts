@@ -1,5 +1,3 @@
-/*=============================================== Capitalize ===============================================*/
-
 /**
  * @description Capitalize a string
  * @param string: string

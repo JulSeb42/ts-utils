@@ -1,5 +1,3 @@
-/*=============================================== Convert date ===============================================*/
-
 /**
  * @description Convert a date string to a full date
  * @param date: Date | string

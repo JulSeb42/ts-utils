@@ -1,5 +1,3 @@
-/*=============================================== Generate numbers ===============================================*/
-
 /**
  * @description Generates an array of numbers
  * @param min?: number

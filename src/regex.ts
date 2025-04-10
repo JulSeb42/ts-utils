@@ -1,5 +1,3 @@
-/*=============================================== Regex tests ===============================================*/
-
 /**
  * @description Regular expression for password
  * @example passwordRegex.test("hello")

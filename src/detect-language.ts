@@ -1,5 +1,3 @@
-/*=============================================== Detect language ===============================================*/
-
 /**
  * @description Detects `lang` value in local storage or from navigator
  * @example detectLanguage() => fr

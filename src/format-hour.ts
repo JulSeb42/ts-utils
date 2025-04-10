@@ -1,5 +1,3 @@
-/*=============================================== Format hour ===============================================*/
-
 /**
  * @description Format hour with half times
  * @param hour: number

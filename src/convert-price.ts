@@ -1,5 +1,3 @@
-/*=============================================== Convert price to 100,00 € ===============================================*/
-
 /**
  * @description Convert a price with currency
  * @param price: number

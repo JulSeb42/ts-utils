@@ -1,5 +1,3 @@
-/*=============================================== Get a random date ===============================================*/
-
 /**
  * @description Get a random date with format `yyyy-mm-dd`
  * @param minYear?: number

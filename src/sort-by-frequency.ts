@@ -1,5 +1,3 @@
-/*=============================================== Sort by frequency ===============================================*/
-
 /**
  * @description Sort array of strings by frequency of values
  * @param array: T[]

@@ -1,5 +1,3 @@
-/*=============================================== Convert date short ===============================================*/
-
 /**
  * @description Convert a date string to a short date
  * @param date: Date | string

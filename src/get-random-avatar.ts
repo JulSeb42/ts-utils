@@ -1,5 +1,3 @@
-/*=============================================== Get random avatar ===============================================*/
-
 /**
  * @description Get random avatar from cartoon-avatar library: https://github.com/Ashwinvalento/cartoon-avatar
  * @param gender?: "male" | "female" | "other"

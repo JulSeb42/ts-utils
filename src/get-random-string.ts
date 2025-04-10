@@ -1,5 +1,3 @@
-/*=============================================== Get random string ===============================================*/
-
 /**
  * @description Get a random string
  * @param length?: number

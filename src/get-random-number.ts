@@ -1,5 +1,3 @@
-/*=============================================== Get random number ===============================================*/
-
 /**
  * @description Get random number between set values
  * @param min?: number

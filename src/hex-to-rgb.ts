@@ -1,5 +1,3 @@
-/*=============================================== Hex to RGB ===============================================*/
-
 /**
  * @description Convert a Hex value to RGB
  * @param hex: string

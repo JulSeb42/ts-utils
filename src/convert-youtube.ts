@@ -1,5 +1,3 @@
-/*=============================================== Convert Youtube link ===============================================*/
-
 /**
  * @description Converts a YouTube url to an embed url
  * @param url: string

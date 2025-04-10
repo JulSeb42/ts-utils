@@ -1,5 +1,3 @@
-/*=============================================== Get time now ===============================================*/
-
 /**
  * @description Get the time now
  * @param options?: { withSeconds?: boolean; withMiliSeconds?: boolean }

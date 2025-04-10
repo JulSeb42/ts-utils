@@ -1,5 +1,3 @@
-/*=============================================== Get percentage ===============================================*/
-
 /**
  * @description Get percentage of given value
  * @param partial: number

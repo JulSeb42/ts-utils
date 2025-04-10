@@ -1,5 +1,3 @@
-/*=============================================== Delete duplicates ===============================================*/
-
 /**
  * @description Delete duplicated values from array
  * @param array: T[]

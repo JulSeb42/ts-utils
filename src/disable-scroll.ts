@@ -1,5 +1,3 @@
-/*=============================================== Disable scroll ===============================================*/
-
 /**
  * @description Disable page scroll
  * @example disableScroll()

@@ -1,5 +1,3 @@
-/*=============================================== Get tomorrow ===============================================*/
-
 /**
  * @description Get tomorrow's date in format `yyyy-mm-dd`
  * @example getNextDay(currentDate: string | Date) => 2023-08-22
