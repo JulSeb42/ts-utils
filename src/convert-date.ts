@@ -1,9 +1,23 @@
 /**
- * @description Convert a date string to a full date
- * @param date: Date | string
- * @example convertDateShort("2023-08-12") => 12 August 2023
+ * @description Convert a date to a full date format (DD MMMM YYYY).
+ * This function takes a Date object or date string and formats it as a readable full date.
+ *
+ * @param {Date | string} date - The date to convert (Date object or date string)
+ *
+ * @returns {string} The formatted date string in "DD MMMM YYYY" format
+ *
+ * @example
+ * // Convert date string
+ * convertDate("2023-08-12") // Returns "12 August 2023"
+ *
+ * @example
+ * // Convert Date object
+ * convertDate(new Date("2023-12-25")) // Returns "25 December 2023"
+ *
+ * @example
+ * // Convert with single digit day
+ * convertDate("2023-01-05") // Returns "05 January 2023"
  */
-
 export function convertDate(date: Date | string): string {
     date = typeof date === "string" ? new Date(date) : date
 

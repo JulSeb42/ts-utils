@@ -1,8 +1,19 @@
 /**
- * @description Get today's date in format `yyyy-mm-dd`
- * @example getToday() => 2023-08-21
+ * @description Get today's date in YYYY-MM-DD format.
+ * This function returns the current date formatted as a string with zero-padding.
+ *
+ * @returns {string} Today's date in "YYYY-MM-DD" format
+ *
+ * @example
+ * // Get today's date
+ * getToday() // Returns "2023-08-21" (example for August 21, 2023)
+ *
+ * @example
+ * // Use as default parameter
+ * function processDate(date = getToday()) {
+ *   // Process the date
+ * }
  */
-
 export function getToday(): string {
     let today = new Date()
     let dd: number | string = today.getDate()

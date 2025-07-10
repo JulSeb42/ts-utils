@@ -3,12 +3,31 @@ type Entry<T> = {
 }[keyof T]
 
 /**
- * @description Filter any object by value
- * @param object: T
- * @param callback: (entry: Entry<T>, i: number, arr: Entry<T>[]) => boolean
- * @example filterObject({ id: 0, name: null }, ([_, v]) => v !== null) => { id: 0 }
+ * @description Filter an object by its values using a callback function.
+ * This function applies a filter callback to each key-value pair and returns a new object
+ * containing only the entries that pass the filter condition.
+ *
+ * @template T - The type of the input object
+ * @param {T} object - The object to filter
+ * @param {function} callback - Filter function that receives [key, value] entry, index, and entries array
+ *
+ * @returns {Partial<T>} A new object containing only the filtered entries
+ *
+ * @example
+ * // Filter out null values
+ * filterObject({ id: 0, name: null, age: 25 }, ([_, v]) => v !== null)
+ * // Returns { id: 0, age: 25 }
+ *
+ * @example
+ * // Filter by value type
+ * filterObject({ a: 1, b: "hello", c: 3 }, ([_, v]) => typeof v === "number")
+ * // Returns { a: 1, c: 3 }
+ *
+ * @example
+ * // Filter by key pattern
+ * filterObject({ userId: 1, userName: "john", email: "john@example.com" }, ([k, _]) => k.startsWith("user"))
+ * // Returns { userId: 1, userName: "john" }
  */
-
 export function filterObject<T extends object>(
     object: T,
     callback: (entry: Entry<T>, i: number, arr: Entry<T>[]) => boolean

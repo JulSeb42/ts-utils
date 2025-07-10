@@ -1,11 +1,30 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string ToPascalCase
- * @param string: string
- * @example toPascalCase("hello world") => HelloWorld
+ * @description Transform a string to PascalCase format.
+ * This function converts strings to PascalCase by capitalizing the first letter
+ * of each word and removing separators.
+ *
+ * @param {string} string - The string to convert to PascalCase
+ *
+ * @returns {string | undefined} The string in PascalCase format, or undefined if conversion fails
+ *
+ * @example
+ * // Convert space-separated words
+ * toPascalCase("hello world") // Returns "HelloWorld"
+ *
+ * @example
+ * // Convert hyphenated words
+ * toPascalCase("my-variable-name") // Returns "MyVariableName"
+ *
+ * @example
+ * // Convert underscore-separated words
+ * toPascalCase("user_first_name") // Returns "UserFirstName"
+ *
+ * @example
+ * // Handle mixed separators
+ * toPascalCase("my-long_variable name") // Returns "MyLongVariableName"
  */
-
 export function toPascalCase(string: string): string | undefined {
     const formattedString = toBaseCase(string)
 

@@ -1,11 +1,29 @@
 import { toBaseCase } from "./to-base-case"
 
 /**
- * @description Transforms a string TO_CONSTANT_CASE
- * @param string: string
- * @example toConstantCase("hello world") => HELLO_WORLD
+ * @description Transform a string to CONSTANT_CASE format.
+ * This function converts strings to uppercase with underscores separating words.
+ *
+ * @param {string} string - The string to convert to CONSTANT_CASE
+ *
+ * @returns {string | undefined} The string in CONSTANT_CASE format, or undefined if conversion fails
+ *
+ * @example
+ * // Convert space-separated words
+ * toConstantCase("hello world") // Returns "HELLO_WORLD"
+ *
+ * @example
+ * // Convert camelCase
+ * toConstantCase("myVariableName") // Returns "MY_VARIABLE_NAME"
+ *
+ * @example
+ * // Convert hyphenated words
+ * toConstantCase("my-variable-name") // Returns "MY_VARIABLE_NAME"
+ *
+ * @example
+ * // Handle mixed case and numbers
+ * toConstantCase("apiKey123") // Returns "API_KEY_123"
  */
-
 export function toConstantCase(string: string): string | undefined {
     const formattedString = toBaseCase(string)
 

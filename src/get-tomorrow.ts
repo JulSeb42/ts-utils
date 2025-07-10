@@ -1,8 +1,17 @@
 /**
- * @description Get tomorrow's date in format `yyyy-mm-dd`
- * @example getTomorrow() => 2023-08-22
+ * @description Get tomorrow's date in YYYY-MM-DD format.
+ * This function calculates tomorrow's date by adding 24 hours to the current time.
+ *
+ * @returns {string} Tomorrow's date in "YYYY-MM-DD" format
+ *
+ * @example
+ * // Get tomorrow's date
+ * getTomorrow() // Returns "2023-08-22" (example for tomorrow if today is August 21, 2023)
+ *
+ * @example
+ * // Handle month/year transitions
+ * getTomorrow() // Returns "2024-01-01" (if today is December 31, 2023)
  */
-
 export function getTomorrow(): string {
     const tomorrow = new Date(Date.now() + 3600 * 1000 * 24)
     let dd: string | number = tomorrow.getDate()
