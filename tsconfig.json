@@ -7,7 +7,9 @@
         "downlevelIteration": true,
         "skipLibCheck": true,
         "target": "es5",
-        "lib": ["es5", "DOM", "es2021", "dom"]
+        "lib": ["es5", "DOM", "es2021", "dom"],
+        "moduleResolution": "bundler",
+        "module": "esnext"
     },
     "exclude": ["./node_modules"]
 }
