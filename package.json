@@ -1,6 +1,6 @@
 {
     "name": "@julseb-lib/utils",
-    "version": "0.0.17",
+    "version": "0.0.23",
     "private": false,
     "description": "Small utils components in TypeScript",
     "main": "index.js",
@@ -15,6 +15,7 @@
     "license": "MIT",
     "devDependencies": {
         "@types/web": "^0.0.237",
+        "tsx": "^4.20.5",
         "typescript": "^5.5.3"
     }
 }

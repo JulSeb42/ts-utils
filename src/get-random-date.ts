@@ -28,22 +28,32 @@ export function getRandomDate(minYear?: number, maxYear?: number): string {
     const getMinYear = minYear || thisYear
     const getMaxYear = maxYear || thisYear
 
-    let day: number | string = Math.floor(Math.random() * (30 - 1)) + 1
-    let month: number | string = Math.floor(Math.random() * (12 - 1)) + 1
+    let day: number | string = (
+        Math.floor(Math.random() * (30 - 1)) + 1
+    ).toString()
+    let month: number | string = (
+        Math.floor(Math.random() * (12 - 1)) + 1
+    ).toString()
     let year = Math.floor(
         Math.random() * (getMaxYear - getMinYear + 1) + getMinYear
-    )
+    ).toString()
 
-    if (day < 10) {
+    if (Number(day) < 10) {
         day = "0" + day
     }
 
-    if (month < 10) {
+    if (Number(month) < 10) {
         month = "0" + month
     }
 
     if (month === "02") {
-        day = Math.floor(Math.random() * (28 - 1)) + 1
+        let febDay: number | string = Math.floor(Math.random() * (28 - 1)) + 1
+
+        if (febDay < 10) {
+            febDay = "0" + febDay.toString()
+        }
+
+        day = febDay
     }
 
     return `${year}-${month}-${day}`
