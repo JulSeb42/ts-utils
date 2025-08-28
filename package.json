@@ -1,15 +1,16 @@
 {
     "name": "@julseb-lib/utils",
-    "version": "0.0.23",
+    "version": "0.0.24",
     "private": false,
     "description": "Small utils components in TypeScript",
     "main": "index.js",
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "clean": "rm -rf ./lib && rm -rf ./src/*.js && rm -rf ./index.js",
+        "clean": "rm -rf ./lib && rm -rf ./src/*.js && rm -rf ./index.js && rm -rf ./test.js",
         "build": "npm run clean && tsc",
-        "prepublishOnly": "pnpm build"
+        "prepublishOnly": "pnpm build",
+        "test-fn": "pnpm tsx test.ts"
     },
     "author": "Julien Sebag",
     "license": "MIT",

@@ -1,6 +1,3 @@
-import { getRandomDate } from "./src/get-random-date"
-import { generateNumbers } from "./src/generate-numbers"
+import { convertTime } from "./src/convert-time"
 
-generateNumbers(0, 499).map(() => {
-    console.log(getRandomDate(2021, 2024))
-})
+console.log(convertTime(new Date()))
